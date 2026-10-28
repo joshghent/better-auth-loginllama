@@ -1,0 +1,49 @@
+{
+  "name": "better-auth-loginllama",
+  "version": "0.0.0",
+  "description": "Better Auth plugin that scores every sign-in with LoginLlama and blocks the risky ones",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test src/*.test.ts",
+    "prepublishOnly": "pnpm test && pnpm build"
+  },
+  "keywords": [
+    "better-auth",
+    "better-auth-plugin",
+    "login",
+    "security",
+    "account-takeover",
+    "credential-stuffing",
+    "risk-scoring",
+    "loginllama"
+  ],
+  "author": "Josh Ghent <me@joshghent.com>",
+  "homepage": "https://loginllama.app/for-better-auth",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshghent/better-auth-loginllama.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "peerDependencies": {
+    "better-auth": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "better-auth": "^1.7.14",
+    "typescript": "^5.9.3"
+  },
+  "packageManager": "pnpm@11.10.0"
+}
