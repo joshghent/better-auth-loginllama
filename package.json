@@ -1,6 +1,6 @@
 {
   "name": "better-auth-loginllama",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Better Auth plugin that scores every sign-in with LoginLlama and blocks the risky ones",
   "type": "module",
   "exports": {
