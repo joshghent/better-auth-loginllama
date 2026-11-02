@@ -22,8 +22,8 @@ export const auth = betterAuth({
 });
 ```
 
-Set `LOGINLLAMA_API_KEY` in your environment. The free plan covers 1,000 sign-ins
-a month: [get a key](https://loginllama.app/signup).
+Set `LOGINLLAMA_API_KEY` in your environment. The first 1,000 checks are
+free: [get a key](https://loginllama.app/signup).
 
 ## What it does
 
