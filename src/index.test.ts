@@ -8,8 +8,10 @@ import { loginLlama } from './index.ts';
 let score = 0;
 let calls: { authentication_outcome: string; ip_address?: string }[] = [];
 const realFetch = globalThis.fetch;
+let source: string | null = null;
 globalThis.fetch = async (input, init) => {
   if (String(input).startsWith('https://loginllama.app/')) {
+    source = new Headers(init?.headers).get('x-loginllama-source');
     calls.push(JSON.parse(String(init?.body)));
     return Response.json({
       data: { attributes: { risk_score: score, risk_codes: [] } }
@@ -93,4 +95,9 @@ test('refuses to start without an API key', () => {
   } finally {
     if (saved) process.env.LOGINLLAMA_API_KEY = saved;
   }
+});
+
+test('tells LoginLlama which integration sent the check', async () => {
+  await signIn();
+  assert.equal(source, 'better-auth-loginllama');
 });

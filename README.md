@@ -6,7 +6,7 @@ risk and refuses the dangerous ones before a session exists.
 Better Auth checks the password. It does not ask whether the login looks right. A
 correct password from a Tor exit node, a country the user has never been to, or a
 bot that has just tried four thousand other accounts still gets a session. This
-plugin asks [LoginLlama](https://loginllama.app) first.
+plugin asks [LoginLlama](https://loginllama.app/?utm_source=npm&utm_medium=readme&utm_campaign=better-auth-loginllama) first.
 
 ```bash
 npm install better-auth-loginllama
@@ -23,7 +23,7 @@ export const auth = betterAuth({
 ```
 
 Set `LOGINLLAMA_API_KEY` in your environment. The first 1,000 checks are
-free: [get a key](https://loginllama.app/signup).
+free: [get a key](https://loginllama.app/signup?utm_source=npm&utm_medium=readme&utm_campaign=better-auth-loginllama).
 
 ## What it does
 
@@ -36,7 +36,7 @@ error code `LOGINLLAMA_RISKY_SIGN_IN`.
 After the sign-in it reports whether the password was right. That is how
 LoginLlama learns each user's usual devices and places, and why the scores get
 sharper over time. Each attempt shows up in the
-[dashboard](https://loginllama.app/account/dashboard) with its score and reasons.
+[dashboard](https://loginllama.app/account/dashboard?utm_source=npm&utm_medium=readme&utm_campaign=better-auth-loginllama) with its score and reasons.
 
 If LoginLlama is down or takes longer than two seconds, the sign-in goes through.
 A fraud check should never lock your users out.
@@ -69,9 +69,9 @@ other dependencies.
 
 ## Links
 
-- [Full guide: login risk scoring for Better Auth](https://loginllama.app/blog/better-auth-login-risk-scoring)
-- [LoginLlama docs](https://loginllama.app/docs)
-- [Free IP reputation checker](https://loginllama.app/tools/ip-reputation-checker)
+- [Full guide: login risk scoring for Better Auth](https://loginllama.app/blog/better-auth-login-risk-scoring?utm_source=npm&utm_medium=readme&utm_campaign=better-auth-loginllama)
+- [LoginLlama docs](https://loginllama.app/docs?utm_source=npm&utm_medium=readme&utm_campaign=better-auth-loginllama)
+- [Free IP reputation checker](https://loginllama.app/tools/ip-reputation-checker?utm_source=npm&utm_medium=readme&utm_campaign=better-auth-loginllama)
 
 ## Licence
 
