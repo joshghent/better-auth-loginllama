@@ -39,7 +39,8 @@ export const loginLlama = ({
       headers: {
         'Content-Type': 'application/json',
         Accept: 'application/vnd.api+json',
-        'X-API-KEY': apiKey!
+        'X-API-KEY': apiKey!,
+        'X-LOGINLLAMA-SOURCE': 'better-auth-loginllama'
       },
       body: JSON.stringify({
         identity_key: email,
