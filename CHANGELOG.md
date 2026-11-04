@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/joshghent/better-auth-loginllama/compare/better-auth-loginllama-v1.0.0...better-auth-loginllama-v1.0.1) (2026-11-04)
+
+
+### Bug Fixes
+
+* tell LoginLlama which integration sent each check ([#3](https://github.com/joshghent/better-auth-loginllama/issues/3)) ([19664ed](https://github.com/joshghent/better-auth-loginllama/commit/19664edc3635f03fc5819b93f6d4cde2aab6d78d))
+
 ## 1.0.0 (2026-10-28)
 
 
